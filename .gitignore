@@ -1,0 +1,10 @@
+# Keep course material and generated documents local.
+**/*.pdf
+**/*.epub
+
+# Typst build artifacts
+*.aux
+*.log
+
+# macOS metadata
+.DS_Store
