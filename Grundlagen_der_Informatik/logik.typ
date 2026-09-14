@@ -30,6 +30,36 @@
 )
 
 
+= Gesetze
+
+== Kontraposition
+
+$A => B <=> not B => not A$
+
+Eine Implikation ist logisch äquivalent zu ihrer Kontraposition.
+
+== De Morgansche Gesetze
+
+$not (A and B) <=> not A or not B$
+
+$not (A or B) <=> not A and not B$
+
+Die Negation verteilt sich über die Klammer und vertauscht dabei `and` und `or`.
+
 = Wahrheitstabelle
 
-
+#table(
+  columns: (auto, auto, auto, auto, auto, auto, auto),
+  inset: 6pt,
+  align: center,
+  stroke: 0.6pt,
+  [*$A$*], [*$B$*], [*$C$*], [*$A or B$*], [*$not C$*], [*$not (C => A)$*], [*$(A or B) and not (C => A)$*],
+  [w], [w], [w], [w], [f], [f], [f],
+  [w], [w], [f], [w], [w], [f], [f],
+  [w], [f], [w], [w], [f], [f], [f],
+  [w], [f], [f], [w], [w], [f], [f],
+  [f], [w], [w], [w], [f], [w], [w],
+  [f], [w], [f], [w], [w], [f], [f],
+  [f], [f], [w], [f], [f], [w], [f],
+  [f], [f], [f], [f], [w], [f], [f],
+)
