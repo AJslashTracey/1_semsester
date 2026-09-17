@@ -1,0 +1,117 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      3594,        107]
+NotebookOptionsPosition[      2989,         89]
+NotebookOutlinePosition[      3416,        105]
+CellTagsIndexPosition[      3373,        102]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ "Algorithmus zur rationalen Eingrenzung von ",
+ Cell[BoxData[
+  FormBox[
+   SqrtBox["2"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "e6f7c19c-ef02-534f-9c60-d835f8799211"]
+}], "Subsection",
+ CellChangeTimes->{{3.9670778734051647`*^9, 3.9670779005269203`*^9}, {
+  3.967077939366232*^9, 
+  3.9670779462038345`*^9}},ExpressionUUID->"777cfecb-43f4-8e47-9450-\
+29271655fa0f"],
+
+Cell["Obergrenze des Nenners (bitte einstellen) :", "Text",
+ CellChangeTimes->{{3.9670779712690983`*^9, 
+  3.9670780131811047`*^9}},ExpressionUUID->"395b3e6a-c335-9749-86fa-\
+f4001d64c669"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"Obergrenze", "=", "100"}], ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"q", "=", "2"}], ",", 
+   RowBox[{"q", "<=", "Obergrenze"}], ",", 
+   RowBox[{"q", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"p", ":=", "q"}], ",", " ", "\[IndentingNewLine]", 
+     RowBox[{"While", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"p", "/", "q"}], ")"}], "^", "2"}], "<", "2"}], ",", 
+       RowBox[{"p", "++"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"p", "/", "q"}], ")"}], "^", "2"}], "==", "2"}], ",", 
+       RowBox[{"Print", "[", 
+        RowBox[{"p", ",", "\"\</\>\"", ",", "q", ",", "\"\< = \>\"", ",", 
+         RowBox[{"\[Sqrt]", "2"}]}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"Print", "[", 
+        RowBox[{
+         RowBox[{"p", "-", "1"}], ",", "\"\</\>\"", ",", "q", 
+         ",", "\"\< = \>\"", ",", 
+         RowBox[{
+          RowBox[{"N", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"p", "-", "1"}], ")"}], "/", "q"}], ",", "4"}], 
+           "]"}], "\"\< < \>\""}], ",", 
+         RowBox[{"\[Sqrt]", "2"}], ",", "\"\< < \>\"", ",", 
+         RowBox[{"N", "[", 
+          RowBox[{
+           RowBox[{"p", "/", "q"}], ",", "4"}], "]"}], ",", "\"\< = \>\"", ",",
+          " ", "p", ",", " ", "\"\</\>\"", ",", " ", "q"}], "]"}]}], "]"}]}], 
+    "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.9670780490345592`*^9, 3.967078077259859*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"609fac04-efe5-cb44-a4f0-ae5ae926f08e"]
+}, Open  ]]
+},
+WindowSize->{812.5714285714286, 470.57142857142856`},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"14.2 for Microsoft Windows (64-bit) (March 14, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"d32acc1c-7410-ad40-ac78-29ea73a7c67b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 413, 11, 54, "Subsection",ExpressionUUID->"777cfecb-43f4-8e47-9450-29271655fa0f"],
+Cell[992, 35, 189, 3, 33, "Text",ExpressionUUID->"395b3e6a-c335-9749-86fa-f4001d64c669"],
+Cell[1184, 40, 1789, 46, 152, "Input",ExpressionUUID->"609fac04-efe5-cb44-a4f0-ae5ae926f08e"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

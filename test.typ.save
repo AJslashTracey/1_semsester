@@ -1,0 +1,98 @@
+#set page(margin: 2cm)
+#set text(size: 11pt)
+
+= Matrizen in Typst
+
+== Grundform
+
+In `mat(...)` werden Spalten mit Kommas getrennt und Zeilen mit Semikolons.
+$
+  mat(
+    1, 1, 1;
+    2, 2, 2;
+  )
+$
+
+== Allgemeine Schreibweise
+
+$
+  A = mat(
+    a_11, a_12, dots.h, a_(1 n);
+    a_21, a_22, dots.h, a_(2 n);
+    dots.v, dots.v, dots.down, dots.v;
+    a_(m 1), a_(m 2), dots.h, a_(m n);
+  )
+$
+
+== Klammern
+
+Standardmäßig verwendet `mat` runde Klammern. Mit `delim` kann man andere Klammern setzen.
+
+$
+  mat(1, 2; 3, 4)
+  quad
+  mat(1, 2; 3, 4; delim: "[")
+  quad
+  mat(1, 2; 3, 4; delim: "|")
+$
+
+== Zeilen- und Spaltenabstand
+
+Mit `gap` wird der Abstand in beide Richtungen gesetzt. Für getrennte Abstände kann man eine `set`-Regel verwenden.
+
+$
+  mat(1, 2; 3, 4; gap: #1em)
+$
+
+#[
+  #set math.mat(row-gap: 0.6em, column-gap: 1em)
+  $
+    mat(1, 2; 3, 4)
+  $
+]
+
+== Ausrichtung
+
+Einträge können mit `align` ausgerichtet werden. Das ist vor allem bei negativen Zahlen hilfreich.
+
+$
+  mat(
+    -1, 10, 100;
+    2, -20, 200;
+    3, 30, -300;
+    align: #right,
+  )
+$
+
+== Erweiterte Matrix
+
+Für lineare Gleichungssysteme ist `augment` nützlich. Die Linie steht hier nach der zweiten Spalte.
+
+$
+  mat(
+    1, 2, 5;
+    3, 4, 6;
+    augment: #2,
+  )
+$
+
+== Vektoren
+
+Für Spaltenvektoren gibt es `vec(...)`.
+
+$
+  x = vec(x_1, x_2, x_3)
+$
+
+== Determinante
+
+Eine Determinante kann man als Betragsschreibweise mit `delim: "|"` oder als Operator schreiben.
+
+$
+  det(A) = mat(a, b; c, d; delim: "|") = a d - b c
+$
+
+
+
+
+
