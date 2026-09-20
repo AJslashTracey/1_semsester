@@ -25,3 +25,30 @@ $ abs(arrow(v) dot arrow(w)) = norm(arrow(v)) dot norm(arrow(w)) cos(theta) $
 $ arrow cos(theta) <= 0 $
 
 $arrow$ Dotproduct of two vectors is never larger in magnitude than the product of two vector lenghts
+
+
+#pagebreak()
+
+== Dot Product
+
+$ arrow(v) dot arrow(w) = x space space space space x in RR $
+
+== Zero vector
+
+$ bold(0) perp arrow(v) $ ($arrow(v)$ is any Vector)
+
+== Angle between vectors
+
+$ arccos((arrow(v) dot arrow(w))/(abs(arrow(v)) abs(arrow(w)))) $
+
+== Normalization of Vector
+
+$ (arrow(v))/(abs(abs(arrow(v)))) = arrow(v)_n $
+
+== Orthognality /  Pythagoran Theme
+
+$ abs(arrow(v) - arrow(w)^2) = abs(arrow(v))^2 + abs(arrow(w))^2 $
+
+== Law of Cosine
+
+$ c^2 = a^2 + b^2 - 2a b cos(C) $

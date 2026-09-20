@@ -1,7 +1,9 @@
 
 
 import turtle
-import 
+import numpy 
+import pandas as pd
+
 
 turtle.forward(100)
 turtle.done()

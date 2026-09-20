@@ -1,15 +1,16 @@
 - Jede Woche gibt es ein Quiz => Quiz kann bis Mittwoch Abend gelöst werden 
+
 - A Aufgaben => 5/8
+
+- Serie B => übung für Examen 
 
 - Für Prüfungen vorbereiten Typ B Aufgaben lösen. 
 
-
 - coaching angebot => Lücken vom Gymnasium lösen
+
 - Survival kit => Fünft Grüne Aufgaben pro Woche.
 
 - Vorlesung nicht einfach 
-
--
 
 - übungen zu spät abgeben gibt Abzug
 
